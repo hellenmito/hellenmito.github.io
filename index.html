@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hellen Mito | Cybersecurity and Network Engineering</title>
+<meta name="description" content="Hellen Mito: cybersecurity graduate student at Eastern Illinois University with a background in information systems, networking and records management.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F2F5F3; --card:#FFFFFF; --ink:#12262B; --muted:#4F6368;
+  --line:#D3DDD9; --signal:#2340E8; --mint:#CFEBDD;
+  --display:"Bricolage Grotesque","Trebuchet MS",sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1rem/1.65 var(--body)}
+a{color:var(--signal)}
+:focus-visible{outline:3px solid var(--signal);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+
+/* nav */
+header{position:sticky;top:0;z-index:5;background:rgba(242,245,243,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav{display:flex;justify-content:space-between;align-items:center;height:56px}
+nav strong{font:800 1.05rem var(--display)}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0}
+nav ul a{color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem;padding:4px 0;border-bottom:2px solid transparent;transition:border-color .2s}
+nav ul a:hover{border-color:var(--signal)}
+
+/* hero */
+.hero{padding:72px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+h1{font:800 clamp(2.6rem,7vw,4.6rem)/1 var(--display);letter-spacing:-.03em;margin:0 0 20px}
+.lead{font-size:1.15rem;color:var(--muted);max-width:34em;margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 20px;border-radius:8px;font-weight:500;text-decoration:none;border:2px solid var(--ink);color:var(--ink);transition:transform .2s,background .2s,color .2s}
+.btn.primary{background:var(--ink);color:#fff}
+.btn:hover{transform:translateY(-2px);background:var(--signal);border-color:var(--signal);color:#fff}
+.topo{width:100%;height:auto}
+.topo .link{stroke:var(--ink);stroke-width:2;stroke-dasharray:6 6;fill:none;animation:flow 1.6s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-24}}
+.topo text{font:500 13px var(--body);fill:var(--ink)}
+
+/* sections */
+section{padding:56px 0}
+h2{font:700 clamp(1.7rem,4vw,2.3rem)/1.15 var(--display);letter-spacing:-.02em;margin:0 0 28px}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px;transition:transform .2s,box-shadow .2s,border-color .2s}
+.card:hover{transform:translateY(-4px);border-color:var(--signal);box-shadow:0 10px 24px rgba(35,64,232,.12)}
+.card h3{font:700 1.15rem/1.3 var(--display);margin:0 0 4px}
+.meta{color:var(--muted);font-size:.9rem;margin:0 0 12px}
+.card ul{margin:0;padding-left:1.1em}
+.card li{margin-bottom:6px}
+.card p{margin:0}
+.tag{display:inline-block;background:var(--mint);border-radius:999px;padding:2px 12px;font-size:.85rem;font-weight:500;margin-bottom:12px}
+.tag.ph{background:#FFF1C7}
+.about{display:grid;gap:20px;grid-template-columns:1.4fr 1fr}
+.chips{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.chips li{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 14px;font-weight:500;transition:background .2s,border-color .2s}
+.chips li:hover{background:var(--mint);border-color:var(--ink)}
+.contact .card a{font-weight:500;word-break:break-word}
+footer{padding:32px 0 48px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+
+@media (max-width:760px){
+  .hero .wrap,.about{grid-template-columns:1fr}
+  nav ul{gap:12px}
+  nav ul a{font-size:.85rem}
+  nav strong{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <strong>Hellen Mito</strong>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Hellen Mito</h1>
+      <p class="lead">Cybersecurity graduate student building on a background in information systems, networking and records management.</p>
+      <div class="btns">
+        <a class="btn primary" href="#contact">Get in touch</a>
+        <a class="btn" href="#experience">See my experience</a>
+      </div>
+    </div>
+    <svg class="topo" viewBox="0 0 360 240" role="img" aria-label="Network diagram linking Nairobi, Kenya to Charleston, Illinois">
+      <path class="link" d="M70 170 C 120 60, 240 60, 290 90"/>
+      <path class="link" d="M70 170 L 290 190" />
+      <rect x="30" y="145" width="80" height="50" rx="10" fill="#CFEBDD" stroke="#12262B" stroke-width="2"/>
+      <rect x="250" y="65" width="80" height="50" rx="10" fill="#fff" stroke="#12262B" stroke-width="2"/>
+      <rect x="250" y="165" width="80" height="50" rx="10" fill="#fff" stroke="#12262B" stroke-width="2"/>
+      <circle cx="290" cy="90" r="6" fill="#2340E8"/>
+      <circle cx="290" cy="190" r="6" fill="#2340E8"/>
+      <circle cx="70" cy="170" r="6" fill="#2340E8"/>
+      <text x="70" y="218" text-anchor="middle">Nairobi</text>
+      <text x="290" y="58" text-anchor="middle">Charleston, IL</text>
+      <text x="290" y="238" text-anchor="middle">Cisco NetAcad</text>
+    </svg>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <div class="about">
+      <div class="card">
+        <p>I'm pursuing a Master of Science in Cybersecurity at Eastern Illinois University in Charleston, Illinois (expected May 2027). I hold a Bachelor of Science in Information Science from The Technical University of Kenya.</p>
+        <p style="margin-top:12px">My internships across health IT, a multimedia library and a judiciary records office taught me to keep data accurate, systems documented and users supported. I'm now applying that discipline to network design, routing and switching, and information security.</p>
+      </div>
+      <div class="card">
+        <h3>Education</h3>
+        <p class="meta">Eastern Illinois University</p>
+        <p>M.S., Cybersecurity<br>Expected May 2027</p>
+        <p class="meta" style="margin-top:16px">The Technical University of Kenya</p>
+        <p>B.S., Information Science<br>2019 to 2023</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <div class="grid">
+      <article class="card">
+        <span class="tag">Intern</span>
+        <h3>USAID HealthIT Kenya</h3>
+        <p class="meta">Nairobi, Kenya | Jun 2024 to Dec 2024</p>
+        <ul>
+          <li>Assisted in implementing health information systems that support data-driven decisions in public health.</li>
+          <li>Worked with IT professionals to develop and maintain software that improves patient care and health services.</li>
+          <li>Documented project activities and outcomes.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <span class="tag">Intern</span>
+        <h3>Multimedia Library, Alliance Française de Nairobi</h3>
+        <p class="meta">Nairobi, Kenya | Jan 2024 to Apr 2024</p>
+        <ul>
+          <li>Cataloged resources and maintained the open-source library database and integrated system.</li>
+          <li>Supported patrons with inquiries and tailored resource recommendations.</li>
+          <li>Helped launch the updated digital library platform, Culturethèque, through user guidance, training and staff orientation, improving access for over 400 users.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <span class="tag">ICT/Records intern</span>
+        <h3>The Judiciary of Kenya</h3>
+        <p class="meta">Nairobi, Kenya | Jul 2023 to Oct 2023</p>
+        <ul>
+          <li>Audited the electronic case tracking system regularly to keep case progression records accurate.</li>
+          <li>Resolved data discrepancies to uphold information reliability.</li>
+          <li>Improved records management procedures, increasing organizational efficiency.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <span class="tag">Virtual internship</span>
+        <h3>Deloitte Australia</h3>
+        <p class="meta">Job simulation | Jan 2026</p>
+        <ul>
+          <li>Read web activity logs and answered questions to identify suspicious user activity.</li>
+          <li>Supported a simulated client through a cybersecurity breach.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="grid">
+      <article class="card">
+        <span class="tag ph">Placeholder</span>
+        <h3>Network design project</h3>
+        <p class="meta">Add tools, dates and your role</p>
+        <p>Describe the network you designed, the problem it solved and what you learned. Link to a diagram or write-up.</p>
+      </article>
+      <article class="card">
+        <span class="tag ph">Placeholder</span>
+        <h3>Log analysis and incident response</h3>
+        <p class="meta">Add tools, dates and your role</p>
+        <p>Summarize how you investigated suspicious activity, what you found and how you reported it.</p>
+      </article>
+      <article class="card">
+        <span class="tag ph">Placeholder</span>
+        <h3>Routing and switching lab</h3>
+        <p class="meta">Add tools, dates and your role</p>
+        <p>Outline the topology you configured, the protocols you used and how you tested it. Add a link to your repository.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <ul class="chips">
+      <li>Information security</li>
+      <li>Risk assessment</li>
+      <li>Network design and architecture</li>
+      <li>Routing and switching</li>
+      <li>Operating systems</li>
+      <li>Database management</li>
+      <li>Information retrieval, mapping and architecture</li>
+      <li>Digital literacy and user support</li>
+      <li>Communication</li>
+      <li>Team collaboration</li>
+    </ul>
+    <h3 style="font:700 1.15rem var(--display);margin:36px 0 12px">Certifications</h3>
+    <div class="grid">
+      <div class="card"><h3>Cybersecurity</h3><p class="meta">Cisco Networking Academy | In progress</p></div>
+      <div class="card"><h3>Monitoring, Evaluation, Accountability and Learning (MEAL)</h3><p class="meta">Cornerstone OnDemand Foundation | 2024</p></div>
+      <div class="card"><h3>Software Engineering</h3><p class="meta">Mastercard Foundation, ALX Africa | Aug 2022 to 2024</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <div class="grid">
+      <div class="card"><h3>Email</h3><p><a href="mailto:hellenmito88@gmail.com">hellenmito88@gmail.com</a></p></div>
+      <div class="card"><h3>Phone</h3><p><a href="tel:+12172461038">(217) 246-1038</a></p></div>
+      <div class="card"><h3>LinkedIn</h3><p><a href="https://www.linkedin.com/in/hellenmito" target="_blank" rel="noopener">linkedin.com/in/hellenmito</a></p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Hellen Mito</div>
+</footer>
+</body>
+</html>
